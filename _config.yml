@@ -1,0 +1,11 @@
+title: "ज्ञान-विज्ञान ब्रह्मज्ञान"
+email: "your-email@gmail.com"
+description: "विज्ञान, दर्शन और चेतना का अनूठा संगम"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://gyanvigyanbrhamgyan.com" # the base hostname & protocol for your site
+
+# Design Theme
+theme: minima
+
+plugins:
+  - jekyll-feed
