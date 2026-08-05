@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ज्ञान-विज्ञान ब्रह्मज्ञान</title>
     <style>
-        /* पूरी साइट का बेसिक डिजाइन और रंग */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -14,7 +13,24 @@
             color: #333;
             line-height: 1.6;
         }
-        /* ऊपर का हेडर हिस्सा */
+        /* नेविगेशन मेनू बार */
+        nav {
+            background-color: #15294e;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #4da6ff;
+        }
+        /* हेडर हिस्सा */
         header {
             background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
@@ -44,7 +60,7 @@
             border-bottom: 2px solid #eee;
             padding-bottom: 8px;
         }
-        /* नीचे का फुटर */
+        /* फुटर */
         footer {
             text-align: center;
             padding: 20px;
@@ -56,6 +72,13 @@
     </style>
 </head>
 <body>
+
+    <!-- नेविगेशन मेनू -->
+    <nav>
+        <a href="index.html">होम</a>
+        <a href="#about">हमारे बारे में</a>
+        <a href="#contact">संपर्क करें</a>
+    </nav>
 
     <header>
         <h1>ज्ञान-विज्ञान ब्रह्मज्ञान</h1>
