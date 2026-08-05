@@ -2,6 +2,9 @@ backend:
   name: github
   repo: gyanvigyanbrhamgyan98-arch/my-secure-blog
   branch: main
+  # नीचे यह लाइन जोड़ने से यह नेटलिफाई की जगह सीधे GitHub से ऑथेंटिकेट करेगा
+  base_url: https://github.com
+  auth_endpoint: login/oauth/authorize
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
