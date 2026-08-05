@@ -1,2 +1,2 @@
-# my-secure-blog
-My Independent Website
+# Gyan-Vigyan-Brhamgyan
+the university of veda
