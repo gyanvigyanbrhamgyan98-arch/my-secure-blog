@@ -16,7 +16,7 @@
         /* नेविगेशन मेनू बार */
         nav {
             background-color: #15294e;
-            padding: 10px 20px;
+            padding: 12px 20px;
             text-align: center;
         }
         nav a {
@@ -46,19 +46,49 @@
             font-size: 1.1rem;
             opacity: 0.9;
         }
-        /* मुख्य कंटेंट का डिब्बा */
+        /* मुख्य कंटेंट क्षेत्र */
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 30px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 0 20px;
         }
-        h2 {
+        .section-title {
             color: #1e3c72;
-            border-bottom: 2px solid #eee;
+            border-bottom: 2px solid #ddd;
             padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        /* ब्लॉग पोस्ट कार्ड का लेआउट */
+        .post-card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .post-card:hover {
+            transform: translateY(-3px);
+        }
+        .post-card h3 {
+            margin-top: 0;
+            color: #1e3c72;
+        }
+        .post-meta {
+            font-size: 0.85rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .read-more:hover {
+            text-decoration: underline;
         }
         /* फुटर */
         footer {
@@ -68,6 +98,7 @@
             color: #777;
             font-size: 0.9rem;
             border-top: 1px solid #ddd;
+            background-color: #fff;
         }
     </style>
 </head>
@@ -80,17 +111,35 @@
         <a href="#contact">संपर्क करें</a>
     </nav>
 
+    <!-- साइट हेडर -->
     <header>
         <h1>ज्ञान-विज्ञान ब्रह्मज्ञान</h1>
         <p>विज्ञान, दर्शन और चेतना का अनूठा संगम</p>
     </header>
 
+    <!-- मुख्य लेख सूची क्षेत्र -->
     <div class="container">
-        <h2>स्वागत है आपका!</h2>
-        <p>हमारी यह नई और स्वतंत्र डिजिटल दुनिया आकार ले रही है। यहाँ आपको जल्द ही प्राचीन ज्ञान और आधुनिक विज्ञान से जुड़े गहरे लेख पढ़ने को मिलेंगे।</p>
-        <p>वेबसाइट का डिज़ाइन तैयार किया जा रहा है, उसके बाद यहाँ नई और पुरानी पोस्ट जोड़ी जाएंगी। साथ बने रहें!</p>
+        <h2 class="section-title">नवीनतम लेख</h2>
+
+        <!-- पहला डेमो पोस्ट कार्ड -->
+        <div class="post-card">
+            <div class="post-meta">प्रकाशित: अगस्त 2026 | दर्शन और विज्ञान</div>
+            <h3>क्वांटम भौतिकी और प्राचीन भारतीय दर्शन</h3>
+            <p>क्या आधुनिक विज्ञान के क्वांटम सिद्धांत और हमारे प्राचीन वेदों में कोई गहरा संबंध है? आइए चेतना और ब्रह्मांड के रहस्यों की इस अनूठी यात्रा पर चर्चा करें...</p>
+            <a href="#" class="read-more">पूरी पोस्ट पढ़ें &rarr;</a>
+        </div>
+
+        <!-- दूसरा डेमो पोस्ट कार्ड -->
+        <div class="post-card">
+            <div class="post-meta">प्रकाशित: अगस्त 2026 | तकनीक और डिजिटल दुनिया</div>
+            ### स्वतंत्र डिजिटल दुनिया की ओर एक कदम
+            <p>ब्लॉगिंग के पुराने सफर से निकलकर अपनी खुद की स्वतंत्र और सुरक्षित वेबसाइट बनाने का यह अनुभव कैसा रहा? जानिए पूरी रूपरेखा...</p>
+            <a href="#" class="read-more">पूरी पोस्ट पढ़ें &rarr;</a>
+        </div>
+
     </div>
 
+    <!-- फुटर -->
     <footer>
         <p>&copy; 2026 ज्ञान-विज्ञान ब्रह्मज्ञान. सर्वाधिकार सुरक्षित.</p>
     </footer>
